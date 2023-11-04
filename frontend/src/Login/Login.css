@@ -1,0 +1,74 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  height: 100vh;
+}
+
+.Tipo-usuario{
+  font-size: 30px;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.login-imagen-container {
+  width: 50%;
+  height: 100%;
+  background-image: url("./img/lomitoicon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.login-formulario-container {
+  background-color: #fff;
+  padding: 30px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+.Titulo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding-bottom: 150px; 
+}
+
+.Boton-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.Titulo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+}
+
+.Label-usuario{
+  margin-bottom: 30px;
+}
+
+.Label-contrasena{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.Boton {
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
