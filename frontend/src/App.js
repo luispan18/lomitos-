@@ -1,6 +1,7 @@
 import React from 'react'
 import Login from './Login/Login'
 import PantallaPrincipal from './PantallaPrincipal'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Ventas from './Menu/Apartados/Ventas/Ventas'
 import Productos from './Menu/Apartados/Productos/Productos'
 import Proveedores from './Menu/Apartados/Proveedores/Proveedores'
@@ -12,32 +13,23 @@ import Usuarios from './Menu/Apartados/Usuarios/Usuarios'
 import Configuracion from './Menu/Apartados/Configuracion/Configuracion'
 
 
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-
 function App() {
   return (
     <BrowserRouter>
-      <div className="d-flex">
-    <div className="col-auto">
-    <PantallaPrincipal/>
-    </div>
-  <div>
   <Routes>
         <Route path='/' element={<Login />} ></Route>
         <Route path='/Login' element={<Login />} ></Route>
         <Route path='/PantallaPrincipal' element={<PantallaPrincipal />}></Route>
-        <Route path='/Ventas' element={<Ventas />}></Route>
-        <Route path='/Productos' element={<Productos />}></Route>
-        <Route path='/Proveedores' element={<Proveedores />}></Route>
-        <Route path='/Estadisticas' element={<Estadisticas />}></Route>
-        <Route path='/Promociones' element={<Promociones />}></Route>
-        <Route path='/Renta' element={<Renta />}></Route>
-        <Route path='/Clientes' element={<Clientes />}></Route>
-        <Route path='/Usuarios' element={<Usuarios />}></Route>
-        <Route path='/Configuracion' element={<Configuracion />}></Route>
+        <Route path='/Ventas' element={<Ventas />} />
+          <Route path='/Productos' element={<Productos />} />
+          <Route path='/Proveedores' element={<Proveedores />} />
+          <Route path='/Estadisticas' element={<Estadisticas />} />
+          <Route path='/Promociones' element={<Promociones />} />
+          <Route path='/Renta' element={<Renta />} />
+          <Route path='/Clientes' element={<Clientes />} />
+          <Route path='/Usuarios' element={<Usuarios />} />
+          <Route path='/Configuracion' element={<Configuracion />} />
       </Routes>
-    </div>
-    </div>
     </BrowserRouter>
   )
 }

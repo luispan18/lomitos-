@@ -1,6 +1,14 @@
+import Menu from "../../menu"
 function Renta(){
     return(
-        <h2>Renta</h2>
+        <div className="d-flex">
+        <div className="col-auto">
+          <Menu />
+        </div>
+        <div>
+            <h2>HOLA</h2>
+        </div>
+      </div> 
     )
 }
 

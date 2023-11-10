@@ -1,0 +1,36 @@
+.BotonCascaron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100%;
+    max-width: 200px; 
+    margin: 0 40px 0px 0; 
+}
+
+.imagen-container {
+    margin-bottom: 10px;
+}
+
+.imagen {
+    height: 100px;
+    width: 100px;
+}
+
+.boton {
+    width: 200px;
+    height: 50px;
+    background-color: yellow;
+    font-size: 20px;
+    padding: 8px 11px;
+    border: none;
+    border-radius: 7px;
+}
+
+
+
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

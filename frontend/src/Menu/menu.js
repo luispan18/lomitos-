@@ -24,7 +24,7 @@ function Menu() {
   }, [navigate]);
 
   return (
-    <div className="d-flex flex-column justify-content-between p-4 vh-100 pantalla">
+    <div className="d-flex flex-column justify-content-between p-4 vh-100 pantalla menu-fijo">
       <div>
         <div className="nombreUsuario">
           <div className="iconoUsuarioContainer">
@@ -40,7 +40,7 @@ function Menu() {
         <br />
         <ul className="nav nav-pills flex-column ">
           <li className="nav-item ">
-            <Link to="/App" className="nav-link titulosmenu">
+            <Link to="/PantallaPrincipal" className="nav-link titulosmenu">
               <img src={iconos.hogar} alt="" className="inicio iconos" />
               <span className="fs-5">Inicio</span>
             </Link>
