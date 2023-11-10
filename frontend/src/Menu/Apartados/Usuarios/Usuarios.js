@@ -1,6 +1,14 @@
+import Menu from "../../menu"
 function Usuarios(){
     return(
-        <h2>Usuarios</h2>
+        <div className="d-flex">
+        <div className="col-auto">
+          <Menu />
+        </div>
+        <div>
+            <h2>Usuarios</h2>
+        </div>
+      </div> 
     )
 }
 

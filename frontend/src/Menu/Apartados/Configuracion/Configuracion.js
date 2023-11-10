@@ -1,6 +1,15 @@
+import Menu from "../../menu"
+
 function Configuracion(){
     return(
-        <h2>Configuracion</h2>
+        <div className="d-flex">
+        <div className="col-auto">
+          <Menu />
+        </div>
+        <div>
+            <h2>Configuración</h2>
+        </div>
+      </div> 
     )
 }
 
