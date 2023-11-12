@@ -5,7 +5,7 @@
     justify-content: center; 
     height: 100%;
     max-width: 200px; 
-    margin: 0 40px 0px 0; 
+    margin: 0 40px 20px 0; 
 }
 
 .imagen-container {
@@ -13,7 +13,7 @@
 }
 
 .imagen {
-    height: 100px;
+    height: 100px;  
     width: 100px;
 }
 
@@ -27,10 +27,14 @@
     border-radius: 7px;
 }
 
-
-
 .col{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.rowPosicion{
+    display: flex;
+    align-items: center;
+    padding-left:100px;
 }

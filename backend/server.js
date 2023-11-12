@@ -50,6 +50,18 @@ if(req.session.usuario){
 }
 })
 
+app.get('/categorias', (req, res) => {
+  const sql = "SELECT c.CategoriaID, c.NombreCategoria FROM Categorias c";
+  db.query(sql, (err, data) => {
+    if (err) {
+      console.error("Error de base de datos:", err);
+      return res.status(500).json({ error: "Error de base de datos" });
+    }
+    return res.json(data);
+  });
+});
+
+
 
 app.post("/login", (req, res) => {
   const { usuario, contrasena } = req.body;
