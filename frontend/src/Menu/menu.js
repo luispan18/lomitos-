@@ -8,7 +8,7 @@ import "./menu.css";
 function Menu() {
   const [name, setName] = useState("");
   const navigate = useNavigate();
-
+  
   axios.defaults.withCredentials = true;
   useEffect(() => {
     axios

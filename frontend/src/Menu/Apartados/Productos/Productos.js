@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import BotonCascaron from "./BotonCascaron";
 import Menu from "../../menu";
+import { Link } from "react-router-dom";
+import './BotonCascaronCSS.css'
 
 function Productos() {
   const [categorias, setCategorias] = useState([]);
@@ -20,13 +22,19 @@ function Productos() {
       </div>
       <div className="col">
         <Container fluid>
-          <Row className="row row-cols-auto rowPosicion">
+          <Row className="row-cols-auto rowPosicion">
             {categorias.map((categoria) => (
-              <BotonCascaron
+              <Link
+                className="row"
                 key={categoria.NombreCategoria}
-                img={require(`../CategoriaImagenes/${categoria.NombreCategoria}.png`)}
-                nombre={categoria.NombreCategoria}
-              />
+                to={`/categorias/${categoria.NombreCategoria}`}
+              >
+                <BotonCascaron
+                  key={categoria.NombreCategoria}
+                  img={require(`../CategoriaImagenes/${categoria.NombreCategoria}.png`)}
+                  nombre={categoria.NombreCategoria}
+                />
+              </Link>
             ))}
           </Row>
         </Container>

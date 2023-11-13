@@ -11,7 +11,7 @@ import Renta from './Menu/Apartados/Renta/Renta'
 import Clientes from './Menu/Apartados/Clientes/Clientes'
 import Usuarios from './Menu/Apartados/Usuarios/Usuarios'
 import Configuracion from './Menu/Apartados/Configuracion/Configuracion'
-
+import Categoria from './Menu/Apartados/Productos/Categorias'
 
 function App() {
   return (
@@ -22,6 +22,8 @@ function App() {
         <Route path='/PantallaPrincipal' element={<PantallaPrincipal />}></Route>
         <Route path='/Ventas' element={<Ventas />} />
           <Route path='/Productos' element={<Productos />} />
+          <Route path="/categorias/:categoria" element={<Categoria />} />
+
           <Route path='/Proveedores' element={<Proveedores />} />
           <Route path='/Estadisticas' element={<Estadisticas />} />
           <Route path='/Promociones' element={<Promociones />} />

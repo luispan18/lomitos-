@@ -61,6 +61,19 @@ app.get('/categorias', (req, res) => {
   });
 });
 
+app.get('/categorias/:categoria/marcas', (req, res) => {
+  const categoria = req.params.categoria;
+  const sql = "SELECT m.NombreMarca FROM Marcas m JOIN Categorias c ON m.CategoriaID = c.CategoriaID WHERE c.NombreCategoria = ?";
+  db.query(sql, [categoria], (err, data) => {
+    if (err) {
+      console.error("Error de base de datos:", err);
+      return res.status(500).json({ error: "Error de base de datos" });
+    }
+    return res.json(data);
+  });
+});
+
+
 
 
 app.post("/login", (req, res) => {
