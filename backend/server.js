@@ -24,7 +24,7 @@ secret: 'secret',
 resave: false,
 saveUninitialized: false,
 cookie: { 
-  secure: false,
+secure: false,
 maxAge: 1000 * 60 * 60 * 24 }
 }));
 
@@ -60,6 +60,8 @@ app.get('/categorias', (req, res) => {
     return res.json(data);
   });
 });
+
+
 
 app.get('/categorias/:categoria/marcas', (req, res) => {
   const categoria = req.params.categoria;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Menu from "../../menu";
-import { Container, Row } from "react-bootstrap";
+import {} from "react-bootstrap";
 import "./BotonCascaronCSS.css";
 import BotonCascaron from "./BotonCascaron";
 import imagenes from "./imagenes"
@@ -27,8 +27,8 @@ function Categoria() {
         <Menu />
       </div>
       <div className="col">
-        <Container fluid>
-          <Row className="row-cols-auto rowPosicion">
+        <div className="container-fluid">
+          <div className="row row-cols-auto rowPosicion">
             {marcas.map((marca) => ( 
           <BotonCascaron
              key={marca.NombreMarca}
@@ -38,8 +38,8 @@ function Categoria() {
            
             ))}
           
-          </Row>
-        </Container>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 .nombreUsuario {
     display: flex;
     align-items: center;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 20px;
   }
 
   .iconoUsuarioContainer {
@@ -47,6 +49,9 @@
 
 .titulosmenu{
   color: black;
+  font-family: 'Jost', sans-serif;
+  margin-bottom:-5px;
+  margin-left: -13px;
 }
 
 .titulosmenu:hover{

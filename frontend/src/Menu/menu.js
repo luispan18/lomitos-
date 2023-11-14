@@ -31,10 +31,10 @@ function Menu() {
             <img src={iconos.perfil} alt="#" className="iconoUsuario" />
           </div>
           <div className="nombreInfoContainer">
-            <h5>
-              <strong>LOMITO</strong>
-            </h5>
-            <span className="fs-5">{name}</span>
+            
+              <strong className="fs-2">Lomito</strong>
+            
+            <span  className="fs-5 " >{name}</span>
           </div>
         </div>
         <br />
@@ -42,7 +42,7 @@ function Menu() {
           <li className="nav-item ">
             <Link to="/PantallaPrincipal" className="nav-link titulosmenu">
               <img src={iconos.hogar} alt="" className="inicio iconos" />
-              <span className="fs-5">Inicio</span>
+              <span className="fs-5  ">Inicio</span>
             </Link>
           </li>
           <li className="nav-item ">
